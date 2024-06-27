@@ -1,0 +1,54 @@
+block name-pages
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")/
+		if FAVICON
+			link(rel="icon" type=FAVICON_TYPE href= FAVICON)/
+		title Список страниц
+
+		style.
+			.body-list-pages {
+				padding: 20px;
+			}
+			.h1 {
+				font-size: 26px;
+				margin-bottom: 20px;
+				color: #000000;
+			}
+			.link {
+				font-size: 16px;
+				line-height: 1.3;
+				text-decoration: none;
+				color: #000000;
+			}
+			.link:hover {
+				color: #00000080;
+			}
+
+	body(class="body-list-pages")
+		h1(class="h1") Страницы сайта:
+
+		- let IDX = 1;
+		for link, idx in listLinks
+			if link.title !== 'list-pages'
+				-
+					let LINK_NAME = 'name page';
+					if(LIST_PAGES && LIST_PAGES[link.title]) {
+						LINK_NAME = LIST_PAGES[link.title];
+					}
+
+				a(class="link" href=link.link target="_blank" title=link.title accesskey=`${IDX}`)
+					| #{`${IDX}. ${LINK_NAME} (${link.title}.html)`}
+					br
+
+				- IDX++;
+
+		if isDev
+			script(src="/socket.io/socket.io.js")
+			script.
+				const socket = io();
+				socket.on('webpackUpdate', () => {
+					location.reload();
+				});

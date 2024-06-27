@@ -1,0 +1,36 @@
+-
+	function classes(cn) {
+		const BLOCK = CN('header');
+
+		//- TODO: нельзя вкладывать блок в блоке (противоречит методологии БЭМ) ИСПРАВИТЬ!!!!!
+		const BLOCK3 = CN('mobilemenu');
+
+			return {
+				block: BLOCK({
+				[`${cn?.customClass}`]: !!cn?.customClass,
+				}, [ 'new-spacing' ]),
+				elementBody: BLOCK('body', {
+					[`${cn?.customClass}`]: !!cn?.customClass,
+				}),
+				elementBodyWhite: BLOCK('body_white'),
+				elementMenu: BLOCK('menu'),
+				elementOverlay: BLOCK('overlay'),
+				elementAdditionalWrap: BLOCK('additional-wrap'),
+				elementNav: BLOCK('nav'),
+				elementSubMenu: BLOCK('sub-menu'),
+				elementSubMenuWrapper: BLOCK('sub-menu-wrapper'),
+				elementBurgerOpen: BLOCK('burger', {'open': true}),
+				elementBurgerClose: BLOCK('burger', { 'close': true }),
+				elementBodyMobile:BLOCK('body', { 'mobile': true }),
+				elementMobilemenuPopup: BLOCK('mobilemenu-popup'),
+				elementMobilemenu: BLOCK('mobilemenu'),
+				elementMobilemenuBody: BLOCK('mobilemenu-body'),
+				elementMobilemenuIcon: BLOCK('mobilemenu-icon'),
+				elementMobilemenuLine: BLOCK('mobilemenu-line'),
+				elementMobilemenuActivityItem: BLOCK('mobilemenu-activity-item'),
+				elementMobilemenuTitle: BLOCK('mobilemenu-title'),
+				elementMobilemenuList: BLOCK('mobilemenu-list'),
+				elementMobileItemGroup: BLOCK('mobilemenu-item', {'group': true}),
+				elementMobileActivityList: BLOCK('mobilemenu-activity-list'),
+		}
+	}

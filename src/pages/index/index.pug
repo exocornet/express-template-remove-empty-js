@@ -1,0 +1,29 @@
+//- # ПОДКЛЮЧЕНИЕ LAYOUT # -//
+extends ../../shared/helpers/pug/layout
+
+//- # ПОДКЛЮЧЕНИЕ STORE СТРАНИЦЫ # -//
+block variables
+	include store/index.store.pug
+
+//- # ПОДКЛЮЧЕНИЕ ПЕРЕМЕННЫХ В HEAD ДЛЯ METADATA -//
+block metadata
+	-
+		const metadata = {
+			title: 'Главная',
+			description: 'описание ГЛАВНОЙ страницы'
+		};
+
+//- # ПОДКЛЮЧЕНИЕ SVG SPRITE СТРАНИЦЫ # -//
+block svg-sprite
+	+SVGSprite(['default', 'user', 'logo'])
+
+//- # ПОДКЛЮЧЕНИЕ CSS СТРАНИЦЫ # -//
+append include-css
+	include styles-and-scripts/index.link.pug
+
+//- # ПОДКЛЮЧЕНИЕ JAVASCRIPT СТРАНИЦЫ # -//
+append include-js
+	include styles-and-scripts/index.script.pug
+
+//- # ПОДКЛЮЧЕНИЕ TEMPLATE - HEADER, FOOTER, MAIN, EXTRA CONTENT # -//
+include ../../app/templates/template

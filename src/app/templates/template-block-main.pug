@@ -1,0 +1,25 @@
+//- # ПОДКЛЮЧЕНИЕ HEADER СТРАНИЦЫ # -//
+block header
+	+Header(Header)
+
+//- # ПОДКЛЮЧЕНИЕ FOOTER СТРАНИЦЫ # -//
+block footer
+	+Footer(Footer)
+
+block main
+	main(class=PAGE_CLASS_MAIN || false)
+		+Container
+			+Row
+				//+Col(LAYOUT_LEFT_COL_PROPS || { cn: { cols: 'col-6', display: 'd-none@md' } })
+				//	if(LAYOUT_LEFT_SIDE_COMPONENT)
+				//		+#{LAYOUT_LEFT_SIDE_COMPONENT}(LAYOUT_LEFT_SIDE_COMPONENT_PROPS)
+				//
+				+Col({ cn: { cols: 'col-20 col-12@md col-4@xs center-col', offset: 'offset-1 offset-0@md' } })
+					include ../../shared/helpers/pug/include-main-store
+				//
+				//if(LAYOUT_RIGHT_SIDE_COMPONENT || NEED_EMPTY_RIGHT_COL)
+				//	+Col({ cn: { cols: 'col-8 right-col', offset: 'offset-1' } })
+				//		if(LAYOUT_RIGHT_SIDE_COMPONENT)
+				//			+#{LAYOUT_RIGHT_SIDE_COMPONENT}(LAYOUT_RIGHT_SIDE_PROPS)&attributes(LAYOUT_RIGHT_SIDE_ATTRIBUTES)
+
+append extra-content

@@ -1,0 +1,34 @@
+mixin Button(props)
+	//- # ПОДКЛЮЧЕНИЕ ДЛЯ ПРОВЕРОК DATA, OPT, ELEM # -//
+	include ../../../shared/helpers/pug/shortcut-check-store
+
+	//- # ЛОГИКА КОМПОНЕНТА # -//
+	-
+		// const TAG = DATA('href', false) ? 'a' : 'button';
+		// const isWithIcon = DATA('icon', false) && DATA('text', false) && 'with-icon';
+		// const isOnlyIcon = DATA('icon', false) && !DATA('text', false) && !OPT('isCircle') && 'only-icon';
+		// const isOnlyIconCircle = DATA('icon', false) && !DATA('text', false) && OPT('isCircle') && 'circle';
+		// const typeButton = isWithIcon || isOnlyIcon || isOnlyIconCircle;
+
+		const TEXT_TAG_LIST = ['a', 'button'];
+		const tag = DATA('tag') && TEXT_TAG_LIST.includes(DATA('tag')) ? DATA('tag') : 'button';
+
+	//- # ПОЛУЧЕНИЕ CSS КЛАССОВ КОМПОНЕНТА # -//
+	include Button.cn.pug
+	- const styles = classes({...props.cn, typeButton});
+
+	//- # ВЕРСТКА КОМПОНЕНТА # -//
+	#{tag}(class=styles.button data-open-popup=DATA('dataOpenPopup', false))&attributes(attributes) !{DATA('text')}
+
+	//#{TAG}(
+	//	class=styles.block
+	//	href=DATA('href', false)
+	//	type=DATA('type', false)
+	//	data-modal-form=DATA('dataModalForm', false)
+	//	data-modal-input-data=DATA('dataModalInputData', false)
+	//	disabled=OPT('disabled', false)
+	//)&attributes(attributes.Button)
+	//	if DATA('icon', false)
+	//		+Sprite(DATA('icon'))(class=styles.elementIcon)&attributes(attributes.Icon)
+	//	if DATA('text', false)
+	//		span(class=styles.elementText)&attributes(attributes.Text) !{DATA('text')}

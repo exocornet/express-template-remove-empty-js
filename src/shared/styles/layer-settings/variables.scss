@@ -1,0 +1,146 @@
+// # ПОДКЛЮЧЕНИЕ SCSS ПЕРЕМЕННЫХ ДЛЯ root.scss и default.scss # //
+@import "swiss-knife-scss/layer-settings/variables";
+
+// # ОБЪЯВЛЕНИЕ CSS ПЕРЕМЕННЫХ ДЛЯ ROOT # //
+$variables-root: variables-root(
+	(
+		// ПЕРЕМЕННЫЕ БИБЛИОТЕКИ [START] ==>
+		// ## Общие переменные ## //
+		//"scroll-behavior": auto,
+		// ## Переменные для selection ## //
+		"selection-background": var(--blue),
+		"selection-color": var(--white),
+		// ## Переменные для scrollbar ## //
+		"scrollbar-width": 6px,
+		"scrollbar-radius": 2px,
+		"scrollbar-track-color": var(--white),
+		"scrollbar-thumb-color": var(--silver),
+		"scrollbar-thumb-border": (2px solid var(--silver)),
+		// ## Переменные для тега body ## //
+		"body-font-family": var(--font-roboto-flex),
+		"body-font-size": var(--fs18),
+		"body-font-color": var(--primary-color),
+		"body-font-weight": var(--fw400),
+		//"body-font-style": initial,
+		"body-font-line-height": 1.33,
+		"body-background-color": var(--white),
+		// ## Переменные для тега a ## //
+		"link-color": var(--blue-light),
+		"link-hover-color": var(--blue-dark),
+		"link-text-decoration": none,
+		// ## Переменные для тега hr ## //
+		"hr-color": var(--white-20),
+		// <== [END] ПЕРЕМЕННЫЕ БИБЛИОТЕКИ
+		// ## Fonts ## //
+		"font-cera-round": ("CeraRound", sans-serif),
+		"font-comfortaa": ("Comfortaa", sans-serif),
+		"font-roboto-flex": ("RobotoFlex", sans-serif),
+		"font-rubik": ("Rubik", sans-serif),
+		// ## Colors standard ## //
+		"silver": hsla(0, 0.8%, 75.49%, 1),
+		"primary-color": hsla(220, 16.22%, 14.51%, 1),
+		"main-color": hsla(251, 64%, 22%, 1),
+		"white": hsla(0, 0%, 100%, 1),
+		"white-05": hsla(0, 0%, 100%, 0.05),
+		"white-10": hsla(0, 0%, 100%, 0.1),
+		"white-20": hsla(0, 0%, 100%, 0.2),
+		"white-50": hsla(0, 0%, 100%, 0.5),
+		"white-80": hsla(0, 0%, 100%, 0.8),
+		"black": hsla(0, 0%, 0%, 1),
+		"black-20": hsla(0, 0%, 0%, 0.2),
+		"black-05": hsla(0, 0%, 0%, 0.05),
+		"primary-black": hsla(220, 16%, 15%, 1),
+		"primary-black-50": hsla(220, 16%, 15%, 0.5),
+		"blue": hsla(203, 88%, 47%, 1),
+		"blue-light": hsla(200, 82%, 47%, 1),
+		"blue-dark": hsla(200, 100%, 40%, 1),
+		"ultramarine": hsla(188, 100%, 50%, 1),
+		"green": hsla(155, 98%, 63%, 1),
+		"red": hsla(353, 76%, 62%, 1),
+		"red-danger": hsla(352, 87%, 65%, 1),
+		"pink": hsla(352, 92%, 95%, 1),
+		"grey": hsla(270, 9%, 96%, 1),
+		"light-grey": hsla(228, 22%, 95%, 1),
+		"light-grey-08": hsla(228, 22%, 95%, 0.8),
+		"dark-gray": hsla(221, 10%, 50%, 1),
+		"normal-gray": hsla(219, 20%, 70%, 1),
+		"dull-gray": hsla(224, 37%, 90%, 1),
+		"border-color": hsla(0, 0%, 82%, 1),
+		"neutral-grey": hsla(222, 23%, 91%, 1),
+		"error-color": hsla(5, 78%, 58%, 1),
+		"orange": hsla(25, 100%, 55%, 1),
+		"orange-dark": hsla(19, 83%, 55%, 1),
+		"orange-light": hsla(36, 100%, 53%, 1),
+		"city-sky": hsla(200, 67%, 72%, 1),
+		"light-magenta": hsla(292, 100%, 80%, 1),
+		"secondary-blue-light": hsla(200, 100%, 71%, 1),
+		"gold": hsla(45, 100%, 50%, 1),
+		"aquamarine": hsla(190, 100%, 55%, 1),
+		"green-light": hsla(70, 95%, 47%, 1),
+		"surface-interactive-light": hsla(199, 89%, 93%, 1),
+		// ## Color gradient ## //
+		"gradient-red-blue":
+			linear-gradient(
+				103.18deg,
+				hsla(352, 90%, 60%, 1) 8.82%,
+				hsla(315, 40%, 50%, 1) 37.31%,
+				hsla(235, 70%, 61%, 1) 65.8%,
+				hsla(203, 90%, 55%, 1) 94.29%
+			),
+		"gradient-green-blue": linear-gradient(180deg, hsla(203, 88%, 47%, 1) 0.01%, hsla(155, 98%, 63%, 1) 100%),
+		"gradient-purple-pink": linear-gradient(345.96deg, hsla(292, 100%, 80%, 1) 0%, hsla(252, 100%, 60%, 1) 100%),
+		"gradient-orange-pink":
+			linear-gradient(315deg, hsla(292, 100%, 70%, 1) 0%, hsla(355, 100%, 68%, 1) 50%, hsla(40, 100%, 50%, 1) 100%),
+		// ## Font-size ## //
+		"fs12": 1.2rem,
+		"fs14": 1.4rem,
+		"fs16": 1.6rem,
+		"fs18": 1.8rem,
+		"fs24": 2.4rem,
+		// ## Font-weight ## //
+		"fw400": 400,
+		"fw600": 600,
+		"fw700": 700,
+		// ## Border-radius ## //
+		"br4": 4px,
+		// ## Общие вспомогательные переменные CSS ## //
+		//"rounding-effect": 0px,
+		//"column-gap": 0px,
+		"infinity": calc(infinity)
+	)
+);
+
+// # ПЕРЕОПРЕДЕЛЕНИЕ ПЕРЕМЕННЫХ ДЛЯ МЕДИАЗАПРОСОВ # //
+$media-direction: "max";
+$breakpoints: (
+	xs: 360,
+	sm: 576,
+	md: 768,
+	lg: 992,
+	xl: 1200,
+	xxl: 1400,
+);
+
+$col-media-params: (
+	xs: 1,
+	sm: 6,
+	md: (
+		6,
+		24,
+	),
+	lg: 12,
+	xl: 12,
+	xxl: (
+		12,
+		32,
+	),
+);
+
+// # ПЕРЕМЕННАЯ ДЛЯ ОТСТУПОВ MARGIN, PADDING, GAP # //
+$property-values-spacings: (auto, 0, 4, 8, 12, 16, 18, 20, 24, 32, 48, 64, 80, 96, 160);
+
+// # ПЕРЕМЕННАЯ ДЛЯ ЦВЕТОВ # //
+$variable-colors: ("silver", "black", "white", "grey");
+
+// # SCSS ПЕРЕМЕННЫЕ # //
+$column-gap: var(--column-gap, 0);

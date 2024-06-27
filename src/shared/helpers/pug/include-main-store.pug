@@ -1,0 +1,4 @@
+if PAGE_STORE
+	for componentStore, index in PAGE_STORE.getComponents
+		if typeof pug_mixins[`${PAGE_STORE.getComponents[index].includeMain}`] === 'function'
+			+#{PAGE_STORE.getComponents[index].includeMain}(componentStore)

@@ -1,0 +1,23 @@
+-
+	function classes(cn) {
+		// логика формирования классов
+		const cols = cn?.cols ? cn?.cols : 'col-12';
+
+		// определение блока 'col'
+		const BLOCK = CN(cols);
+
+		return {
+			col: BLOCK({}, [
+				// cols,
+				cn?.offset,
+				cn?.order,
+				cn?.justify,
+				cn?.alignSelf,
+				cn?.margin,
+				cn?.padding,
+				cn?.display,
+				cn?.direction,
+				cn?.gap,
+			])
+		}
+	}

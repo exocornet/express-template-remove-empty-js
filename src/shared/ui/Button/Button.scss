@@ -1,0 +1,195 @@
+// # ------------ LAYER SETTINGS and LAYER TOOLS------------ # //
+@import "../../styles/include-setings-styles";
+
+.button {
+	display: inline-block;
+
+	width: max-content;
+	min-width: 140px;
+	padding: 16px 32px;
+
+	cursor: pointer;
+	text-align: center;
+
+	color: var(--white);
+	border-radius: 16px;
+	background: var(--blue-light);
+
+	font-size: var(--fs18);
+	font-weight: var(--fw600);
+	line-height: normal;
+
+	&:hover {
+		color: var(--white);
+		background: var(--blue-dark);
+	}
+
+	// ---------- Модификаторы размеров кнопки ---------- //
+	&_medium {
+		min-width: 130px;
+		padding-block: 12px;
+	}
+
+	// ---------- Модификаторы видов кнопок ---------- //
+	&_secondary {
+		color: var(--primary-black);
+		border: 2px solid var(--neutral-grey);
+		background: var(--transparent);
+
+		&:hover {
+			color: var(--primary-black);
+			border: 2px solid var(--neutral-grey);
+			background: var(--neutral-grey);
+		}
+	}
+
+	&_white-button {
+		color: var(--primary-black);
+		border: 2px solid var(--neutral-grey);
+		background: var(--white);
+	}
+
+	&_transparent-present {
+		position: relative;
+
+		padding-left: 64px;
+
+		border: 2px solid var(--neutral-grey);
+		background: var(--transparent);
+
+		&::before {
+			position: absolute;
+			bottom: 11px;
+			left: 32px;
+
+			//content: url("IMAGES/svg/svg_present-white.svg");
+
+			@include media(sm) {
+				left: 168px;
+			}
+
+			@include media(xs) {
+				left: 64px;
+			}
+		}
+
+		&:hover {
+			color: var(--primary-black);
+			border: 2px solid var(--neutral-grey);
+			background: var(--neutral-grey);
+
+			&::before {
+				//content: url("IMAGES/svg/svg_present-black.svg");
+			}
+		}
+	}
+
+	&_white-for-card {
+		z-index: 1;
+
+		min-width: auto;
+		padding: 12px 10px;
+
+		color: var(--black);
+		border-radius: 12px;
+		background: var(--white);
+
+		font-size: var(--fs16);
+
+		&:hover {
+			color: var(--primary-black);
+			background: var(--neutral-grey);
+		}
+	}
+
+	// ---------- Кастомные модификаторы кнопок ---------- //
+	&_no-border {
+		border: none;
+
+		&:hover {
+			border: none;
+		}
+	}
+
+	&_border-dull-gray {
+		border: 1.2px solid var(--dull-gray);
+	}
+
+	&_long-text {
+		border: none;
+
+		&:hover {
+			border: none;
+		}
+
+		@include media(xs) {
+			padding: 14px;
+
+			font-size: var(--fs16);
+		}
+	}
+
+	&_qr {
+		display: block;
+
+		@include media(sm) {
+			display: none;
+		}
+	}
+
+	&_link {
+		display: none;
+
+		@include media(sm) {
+			display: block;
+		}
+	}
+
+	&_fixed-sm {
+		@include media(sm) {
+			position: fixed;
+			z-index: 3;
+			right: 0;
+			bottom: 32px;
+
+			width: 90%;
+
+			transform: translate(-5.5%, 0);
+		}
+	}
+
+	// TODO Пережиток после brand-button. Потом обсудить насчет замены или типо того
+	// Как минимум используется на странице landing-pets-fourpaw
+	&_orange {
+		color: var(--white);
+		border: 0;
+		border-radius: 4px;
+		background: var(--orange-dark);
+
+		font-weight: var(--fw700);
+
+		&:hover {
+			opacity: 0.9;
+			border: 0;
+			background: var(--orange-dark);
+		}
+	}
+
+	&_for-video {
+		&::before {
+			margin-right: 4px;
+
+			//content: url("IMAGES/svg/play-video.svg");
+		}
+	}
+
+	&_present {
+		&::before {
+			position: absolute;
+			bottom: 11px;
+			left: 32px;
+
+			//content: url("IMAGES/svg/svg_present-white.svg");
+		}
+	}
+}

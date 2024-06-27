@@ -1,0 +1,152 @@
+{
+	"puls-leto": {
+		"TITLE": "\u041f\u0443\u043b\u044c\u0441.\u041b\u0435\u0442\u043e",
+		"HASHTAG": "#\u043f\u0443\u043b\u044c\u0441\u043b\u0435\u0442\u043e",
+		"IMG_PATH": "public/js-images/banner-summer-week.webp",
+		"IMG_PATH_XS": "public/js-images/banner-summer-week-xs.webp",
+		"IMG_PATH_SM": "public/js-images/banner-summer-week-sm.webp",
+		"IMG_PATH_MD": "public/js-images/banner-summer-week-md.webp",
+		"IMG_PATH_LG": "public/js-images/banner-summer-week-lg.webp",
+		"IMG_PATH_L": "public/js-images/banner-summer-week-l.webp",
+		"CARDS": [
+			{
+				"ID": "1236",
+				"CODE": "sk-puls-nazvala-top-5-regionov-rf-ustanovivshikh-antirekord-po-ukusam-kleshchey",
+				"NAME": "\u0421\u041a \u00ab\u041f\u0443\u043b\u044c\u0441\u00bb \u043d\u0430\u0437\u0432\u0430\u043b\u0430 \u0422\u041e\u041f-5 \u0440\u0435\u0433\u0438\u043e\u043d\u043e\u0432 \u0420\u0424, \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0432\u0448\u0438\u0445 \u0430\u043d\u0442\u0438\u0440\u0435\u043a\u043e\u0440\u0434 \u043f\u043e \u0443\u043a\u0443\u0441\u0430\u043c \u043a\u043b\u0435\u0449\u0435\u0439",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "assets/img/news-building.webp",
+				"IBLOCK_SECTION_ID": "171",
+				"DATE": "15 \u0438\u044e\u043b\u044f",
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-nazvala-top-5-regionov-rf-ustanovivshikh-antirekord-po-ukusam-kleshchey\/"
+			},
+			{
+				"ID": "1237",
+				"CODE": "sk-puls-predstavila-novyy-produkt-dlya-ipotechnykh-zaemshchikov-banka-vtb",
+				"NAME": "\u0421\u041a \u00ab\u041f\u0443\u043b\u044c\u0441\u00bb \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u043b\u0430 \u043d\u043e\u0432\u044b\u0439 \u043f\u0440\u043e\u0434\u0443\u043a\u0442 \u0434\u043b\u044f \u0438\u043f\u043e\u0442\u0435\u0447\u043d\u044b\u0445 \u0437\u0430\u0435\u043c\u0449\u0438\u043a\u043e\u0432 \u0431\u0430\u043d\u043a\u0430 \u0412\u0422\u0411",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "assets/img/news-building.webp",
+				"IBLOCK_SECTION_ID": "171",
+				"DATE": "3 \u0438\u044e\u043b\u044f",
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-predstavila-novyy-produkt-dlya-ipotechnykh-zaemshchikov-banka-vtb\/"
+			},
+			{
+				"ID": "1238",
+				"CODE": "sk-puls-vyshla-v-final-premii-cx-world-awards-srazu-v-3-nominatsiyakh",
+				"NAME": "\u0421\u041a \u00ab\u041f\u0443\u043b\u044c\u0441\u00bb \u0432\u044b\u0448\u043b\u0430 \u0432 \u0444\u0438\u043d\u0430\u043b \u043f\u0440\u0435\u043c\u0438\u0438 CX World Awards \u0441\u0440\u0430\u0437\u0443 \u0432 3 \u043d\u043e\u043c\u0438\u043d\u0430\u0446\u0438\u044f\u0445",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "assets/img/news-building.webp",
+				"IBLOCK_SECTION_ID": "171",
+				"DATE": "13 \u043c\u0430\u0440\u0442\u0430",
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-vyshla-v-final-premii-cx-world-awards-srazu-v-3-nominatsiyakh\/"
+			}
+		]
+	},
+	"puls-vesna": {
+		"TITLE": "\u041f\u0443\u043b\u044c\u0441. \u0412\u0435\u0441\u043d\u0430",
+		"HASHTAG": "#\u043f\u0443\u043b\u044c\u0441\u0432\u0435\u0441\u043d\u0430",
+		"IMG_PATH": "\/upload\/iblock\/cdf\/1h3araj5v9hzz9vxotmid1u0hm518i7p.jpg",
+		"IMG_PATH_XS": "\/upload\/uf\/5e5\/t9rbppcrhyts8zryt54qmsr6ykx6blpv.png",
+		"IMG_PATH_SM": "\/upload\/uf\/74d\/lsm4ico3jv9vis3poh0qazs7x57v5bvl.jpg",
+		"IMG_PATH_MD": "\/upload\/uf\/144\/513h4n1vws6ljes817y48fq3mf5hw30f.jpg",
+		"IMG_PATH_LG": "\/upload\/uf\/ecc\/at6k8wztr2p0ip5a742p9w55romqe01f.jpg",
+		"IMG_PATH_L": "\/upload\/uf\/03e\/rx1rmftf3sme4335xw4l6zzjlm1wlurc.jpg",
+		"CARDS": [
+			{
+				"ID": "1241",
+				"CODE": "sk-puls-zapustila-pervuyu-v-rossii-strakhovuyu-podpisku-dlya-koshek-sobak-khorkov-i-shinshill",
+				"NAME": "\u0421\u041a \u00ab\u041f\u0443\u043b\u044c\u0441\u00bb \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u043b\u0430 \u043f\u0435\u0440\u0432\u0443\u044e \u0432 \u0420\u043e\u0441\u0441\u0438\u0438 \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u0443\u044e \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0443 \u0434\u043b\u044f \u043a\u043e\u0448\u0435\u043a, \u0441\u043e\u0431\u0430\u043a, \u0445\u043e\u0440\u044c\u043a\u043e\u0432 \u0438 \u0448\u0438\u043d\u0448\u0438\u043b\u043b",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "\/upload\/iblock\/f22\/wyp4e80lf05qzwgcrmi1whudqd5yw2xy.jpg",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": "8 \u0434\u0435\u043a\u0430\u0431\u0440\u044f",
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-zapustila-pervuyu-v-rossii-strakhovuyu-podpisku-dlya-koshek-sobak-khorkov-i-shinshill\/"
+			},
+			{
+				"ID": "1240",
+				"CODE": "agentstvo-nkr-podtverdilo-reyting-sk-puls-na-urovne-bbb-ru",
+				"NAME": "\u0410\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u043e \u041d\u041a\u0420 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u043b\u043e \u0440\u0435\u0439\u0442\u0438\u043d\u0433 \u0421\u041a \u00ab\u041f\u0443\u043b\u044c\u0441\u00bb \u043d\u0430 \u0443\u0440\u043e\u0432\u043d\u0435 BBB+.ru",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "\/upload\/iblock\/39c\/7fhbumn6x24jezt3hvz1bh0ejhuey9oh.jpg",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": "19 \u0434\u0435\u043a\u0430\u0431\u0440\u044f",
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/agentstvo-nkr-podtverdilo-reyting-sk-puls-na-urovne-bbb-ru\/"
+			},
+			{
+				"ID": "1239",
+				"CODE": "oformlyayte-zashchitu-i-tvorite-dobro-sk-puls-zapuskaet-blagotvoritelnuyu-aktsiyu-v-polzu-fonda-khab",
+				"NAME": "\u041e\u0444\u043e\u0440\u043c\u043b\u044f\u0439\u0442\u0435 \u0437\u0430\u0449\u0438\u0442\u0443 \u0438 \u0442\u0432\u043e\u0440\u0438\u0442\u0435 \u0434\u043e\u0431\u0440\u043e: \u0421\u041a \u00ab\u041f\u0443\u043b\u044c\u0441\u00bb \u0437\u0430\u043f\u0443\u0441\u043a\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u0442\u0432\u043e\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u0443\u044e \u0430\u043a\u0446\u0438\u044e \u0432 \u043f\u043e\u043b\u044c\u0437\u0443 \u0424\u043e\u043d\u0434\u0430 \u0425\u0430\u0431\u0435\u043d\u0441\u043a\u043e\u0433\u043e",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "\/upload\/iblock\/bf9\/qxu6uo1pz2hpssm3qs7i33pwstygvc8s.jpg",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": "20 \u0434\u0435\u043a\u0430\u0431\u0440\u044f",
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/oformlyayte-zashchitu-i-tvorite-dobro-sk-puls-zapuskaet-blagotvoritelnuyu-aktsiyu-v-polzu-fonda-khab\/"
+			}
+		]
+	},
+	"nedelya-3": {
+		"TITLE": "\u041d\u0435\u0434\u0435\u043b\u044f 3",
+		"HASHTAG": "#\u043d\u0435\u0434\u0435\u043b\u044f",
+		"IMG_PATH": null,
+		"IMG_PATH_XS": null,
+		"IMG_PATH_SM": null,
+		"IMG_PATH_MD": null,
+		"IMG_PATH_LG": null,
+		"IMG_PATH_L": null,
+		"CARDS": null
+	},
+	"nedelya-4": {
+		"TITLE": "\u041d\u0435\u0434\u0435\u043b\u044f 4",
+		"HASHTAG": "#\u043d\u0435\u0434\u0435\u043b\u044f",
+		"IMG_PATH": null,
+		"IMG_PATH_XS": null,
+		"IMG_PATH_SM": null,
+		"IMG_PATH_MD": null,
+		"IMG_PATH_LG": null,
+		"IMG_PATH_L": null,
+		"CARDS": null
+	},
+	"nedelya-5": {
+		"TITLE": "\u041d\u0435\u0434\u0435\u043b\u044f 5",
+		"HASHTAG": "#\u043d\u0435\u0434\u0435\u043b\u044f",
+		"IMG_PATH": null,
+		"IMG_PATH_XS": null,
+		"IMG_PATH_SM": null,
+		"IMG_PATH_MD": null,
+		"IMG_PATH_LG": null,
+		"IMG_PATH_L": null,
+		"CARDS": null
+	},
+	"nedelya-6": {
+		"TITLE": "\u041d\u0435\u0434\u0435\u043b\u044f 6",
+		"HASHTAG": "#\u043d\u0435\u0434\u0435\u043b\u044f",
+		"IMG_PATH": null,
+		"IMG_PATH_XS": null,
+		"IMG_PATH_SM": null,
+		"IMG_PATH_MD": null,
+		"IMG_PATH_LG": null,
+		"IMG_PATH_L": null,
+		"CARDS": null
+	},
+	"nedelya-7": {
+		"TITLE": "\u041d\u0435\u0434\u0435\u043b\u044f 7",
+		"HASHTAG": "#\u043d\u0435\u0434\u0435\u043b\u044f",
+		"IMG_PATH": null,
+		"IMG_PATH_XS": null,
+		"IMG_PATH_SM": null,
+		"IMG_PATH_MD": null,
+		"IMG_PATH_LG": null,
+		"IMG_PATH_L": null,
+		"CARDS": null
+	},
+	"nedelya-8": {
+		"TITLE": "\u041d\u0435\u0434\u0435\u043b\u044f 8",
+		"HASHTAG": "#\u043d\u0435\u0434\u0435\u043b\u044f",
+		"IMG_PATH": null,
+		"IMG_PATH_XS": null,
+		"IMG_PATH_SM": null,
+		"IMG_PATH_MD": null,
+		"IMG_PATH_LG": null,
+		"IMG_PATH_L": null,
+		"CARDS": null
+	}
+}

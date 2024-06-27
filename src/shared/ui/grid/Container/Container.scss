@@ -1,0 +1,28 @@
+.container {
+	width: 100%;
+	max-width: container-width(xxl);
+	margin-inline: auto;
+	padding-inline: 56px; // check figma
+
+	@include media(xl) {
+		max-width: container-width(xl);
+		padding-inline: 48px;
+	}
+
+	@include media(lg) {
+		max-width: container-width(lg);
+	}
+
+	@include media(md) {
+		max-width: container-width(md);
+		padding-inline: 24px;
+	}
+
+	@include media(sm) {
+		max-width: container-width(sm);
+	}
+
+	@include media(xs) {
+		padding-inline: 16px; // check figma
+	}
+}

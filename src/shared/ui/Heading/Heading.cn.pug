@@ -1,0 +1,13 @@
+-
+	function classes(cn) {
+		const SIZE = ['h1', 'h2','h3', 'h4', 'h5', 'h6'].includes(cn?.size) && cn?.size;
+
+		return {
+			block: [
+				SIZE,
+				cn?.textAlign,
+				cn?.margin,
+				['gray'].includes(cn?.color) && cn?.color
+			]
+		}
+	}

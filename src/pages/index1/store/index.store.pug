@@ -1,0 +1,36 @@
+//- # ПАРАМЕТРЫ ДЛЯ НАСТРОЙКИ LAYOUT # -//
+-
+	const PAGE_TITLE = 'Главная';
+
+//- # ПАРАМЕТРЫ ДЛЯ НАСТРОЙКИ LAYOUT # -//
+// -
+// 	const Header = {
+// 		elem: {
+// 			brandLogo: {
+// 				data: {
+// 					linkHref: '/dfdfd',
+// 				}
+// 			},
+// 		}
+// 	}
+
+//include index--header
+
+//- # НАСЛЕДОВАНИЕ ФУНКЦИИ ДЛЯ РАЗДЕЛЕНИЯ СТОРОВ # -//
+- const PAGE_STORE = addComponents();
+
+//- ## Подключение store секции MainBanners ## -//
+//include index--zone
+//- PAGE_STORE.addComponent(Zone);
+
+//- ## Подключение store секции MainBanners ## -//
+//include index--main-banners
+//- PAGE_STORE.addComponent(MainBanners);
+
+//- ## Подключение store секции SmallBanners ## -//
+//include index--small-banners
+//- PAGE_STORE.addComponent(SmallBanners);
+
+//- ## Подключение store секции Delivery ## -//
+//include index--delivery
+//- PAGE_STORE.addComponent(Delivery);

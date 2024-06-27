@@ -1,0 +1,46 @@
+// # ПАРАМЕТРЫ ПОДКЛЮЧЕНИЯ ШРИФТОВ # //
+
+// ## определение пути к папке шрифтов ## //
+$font-path: "FONTS/";
+// ## определение типов подключаемых шрифтов ## //
+$font-types: (
+	"woff2": "woff2",
+);
+
+// --------------------------------------CeraRound------------------------------------------------- //
+
+// ## определение имени шрифта для вызова в проекте и название папки с шрифтом ## //
+$include-font-family-cera-round: "CeraRound";
+// ## определение индивидуальных типов подключаемых шрифтов ## //
+$font-types-cera-round: (
+	"otf": "opentype",
+);
+
+// # ВЫЗОВ МИКСИНА ПОДКЛЮЧЕНИЯ ШРИФТОВ # //
+@include includeFont($include-font-family-cera-round, $font-path, $font-types-cera-round, "CeraRoundProDEMO-Bold");
+
+// --------------------------------------Comfortaa------------------------------------------------- //
+
+// ## определение имени шрифта для вызова в проекте и название папки с шрифтом ## //
+$include-font-family-comfortaa: "Comfortaa";
+
+// # ВЫЗОВ МИКСИНА ПОДКЛЮЧЕНИЯ ШРИФТОВ # //
+@include includeFont($include-font-family-comfortaa, $font-path, $font-types, "Comfortaa-Regular", 400);
+@include includeFont($include-font-family-comfortaa, $font-path, $font-types, "Comfortaa-Bold", 700);
+
+// --------------------------------------RobotoFlex------------------------------------------------- //
+
+// ## определение имени шрифта для вызова в проекте и название папки с шрифтом ## //
+$include-font-family-roboto-flex: "RobotoFlex";
+
+// # ВЫЗОВ МИКСИНА ПОДКЛЮЧЕНИЯ ШРИФТОВ # //
+//@include includeFont($include-font-family-roboto-flex, $font-path, $font-types, "RobotoFlex-Regular", 400);
+@include includeFont($include-font-family-roboto-flex, $font-path, $font-types, "RobotoFlex-VariableFont");
+
+// --------------------------------------Rubik------------------------------------------------- //
+
+// ## определение имени шрифта для вызова в проекте и название папки с шрифтом ## //
+$include-font-family-rubik: "Rubik";
+
+// # ВЫЗОВ МИКСИНА ПОДКЛЮЧЕНИЯ ШРИФТОВ # //
+@include includeFont($include-font-family-rubik, $font-path, $font-types, "Rubik-Bold");

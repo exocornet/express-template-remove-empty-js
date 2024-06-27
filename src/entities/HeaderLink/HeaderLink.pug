@@ -1,0 +1,29 @@
+mixin HeaderLink(props)
+	//- # ПОДКЛЮЧЕНИЕ ДЛЯ ПРОВЕРОК DATA, OPT, ELEM # -//
+	include ../../shared/helpers/pug/shortcut-check-store
+
+	//- # ЛОГИКА КОМПОНЕНТА # -//
+	- let tag = props && props.opt && props.opt.submenu ? 'div' : 'a';
+
+	//- # ПОЛУЧЕНИЕ CSS КЛАССОВ КОМПОНЕНТА # -//
+	include HeaderLink.cn.pug
+	- const styles = classes(props && props.cn);
+
+	//- # ВЕРСТКА КОМПОНЕНТА # -//
+	#{tag}(class=styles.block href=DATA('linkHref', false) data-modal-window-open=DATA('linkModal', false))&attributes(attributes)
+
+		//- левая иконка
+		if DATA('leftIcon', false)
+			+SVGUse(DATA('leftIcon'))(class=styles.elementLeftIcon)
+			//- svg(class=styles.elementLeftIcon)
+			//- 	use(xlink:href=DATA('leftIcon'))
+
+		| !{DATA('text')}
+		if tag === 'div'
+			block
+
+		//- правая иконка
+		if DATA('rightIcon', false)
+			+SVGUse(DATA('rightIcon'))(class=styles.elementRightIcon)
+			//- svg(class=styles.elementRightIcon)
+			//- 	use(xlink:href=DATA('rightIcon'))

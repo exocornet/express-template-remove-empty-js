@@ -1,0 +1,91 @@
+//- # ПОДКЛЮЧЕНИЕ КОМПОНЕНТОВ И ВСПОМОГАТЕЛЬНЫХ ФУНКЦИЙ # -//
+include ../../shared
+include ../../../entities/entities
+include ../../../widgets/widgets
+include ../../../features/features
+
+//- # ПОДКЛЮЧЕНИЕ STORE СТРАНИЦ И ЛОГИКИ # -//
+block variables
+
+//- # ПОДКЛЮЧЕНИЕ ПЕРЕМЕННЫХ ДЛЯ METADATA -//
+block metadata
+
+doctype html
+html(lang= metadata && metadata.lang || "ru")
+	//- ## Head ## -//
+	head
+		meta(charset="UTF-8")/
+		meta(name="language" content= metadata && metadata.lang || "RU")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")/
+		meta(name="description" content= metadata && metadata.description || "краткое описание страницы")/
+		meta(name="keywords" content= metadata && metadata.keywords || "ключевые, слова, страницы")/
+		if metadata && metadata.canonical
+			link(rel="canonical" href= metadata && metadata.canonical)/
+		if FAVICON
+			link(rel="icon" type=FAVICON_TYPE href= FAVICON)/
+		title= metadata && metadata.title || "Название страницы"
+
+		//- # ДОБАВЛЕНИЕ CSS НА СТРАНИЦУ # -//
+		block include-css
+			| !{HTMLComment('# ОБЯЗАТЕЛЬНЫЕ СТИЛИ ПОДКЛЮЧАЮЩИЕСЯ НА КАЖДОЙ СТРАНИЦЕ #')}
+			link(href="/css/main.css" rel="stylesheet")/
+
+	body(class=PAGE_CLASS_BODY || false)
+		//- # ПОДКЛЮЧЕНИЕ SVG SPRITE # -//
+		block svg-sprite
+
+		//- # ПОДКЛЮЧЕНИЕ HEADER # -//
+		block header
+			style.
+				.layout-h1 {
+					font-size: 40px;
+					color: hsl(0, 0%, 50%);
+					text-align: center;
+					text-shadow: 0 0 2px hsl(0, 0%, 100%);
+				}
+
+				.layout-b {
+					font-weight: bold;
+				}
+			h1(class="layout-h1") Вызови #[b(class="layout-b") block header] в файле страницы и подключи в нем #[b(class="layout-b") Header] для страницы
+
+		//- ## Подключение main и его содержимого ## -//
+		block main
+			main(class=PAGE_CLASS_MAIN || false)
+				include include-main-store
+
+		//- ## Footer ## -//
+		block footer
+			style.
+				.layout-h1 {
+					font-size: 40px;
+					color: hsla(0, 0%, 50%, 1);
+					text-align: center;
+					text-shadow: 0 0 2px hsla(0, 0%, 100%, 1);
+				}
+
+				.layout-b {
+					font-weight: bold;
+				}
+			h1(class="layout-h1") Вызови #[b(class="layout-b") block footer] в файле страницы и подключи в нем #[b(class="layout-b") Footer] для страницы
+
+		//- ## Подключение дополнительных блоков (модальные окна, cookie, popups) ## -//
+		block extra-content
+			if PAGE_STORE
+				for contentStore, index in PAGE_STORE.getComponents
+					if typeof pug_mixins[`${PAGE_STORE.getComponents[index].includeExtraContent}`] === 'function'
+						+#{PAGE_STORE.getComponents[index].includeExtraContent}(contentStore)
+
+		//- # ДОБАВЛЕНИЕ JS НА СТРАНИЦУ # -//
+		block include-js
+			| !{HTMLComment('# ПОДКЛЮЧЕНИЕ JS ИСПОЛЬЗУЕМОГО НА ВСЕХ СТРАНИЦАХ #')}
+			script(src="/js/main.js" defer)
+
+		block update-page
+			if isDev
+				script(src="/socket.io/socket.io.js")
+				script.
+					const socket = io();
+					socket.on('webpackUpdate', () => {
+						location.reload();
+					});

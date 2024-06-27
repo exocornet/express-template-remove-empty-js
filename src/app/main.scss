@@ -1,0 +1,33 @@
+// # ------------ LAYER SETTINGS and LAYER TOOLS------------ # //
+@import "../shared/styles/include-setings-styles";
+
+// # ------------ LAYER GENERIC ------------ # //
+@import "swiss-knife-scss/layer-generic/layer";
+
+@layer generic {
+	// ## Подключение шрифтов ## //
+	@import "../shared/styles/layer-generic/fonts";
+	// ## Стили библиотек ## //
+	@import "../shared/styles/layer-generic/vendors";
+	// ## CSS root переменные ## //
+	@import "swiss-knife-scss/layer-generic/root";
+}
+
+// # ------------ LAYER ELEMENTS ------------ # //
+// ## Сброс стилей ## //
+@layer elements {
+	@import "swiss-knife-scss/layer-elements/reset";
+	// ## стили стандартных тегов ## //
+	@import "../shared/styles/layer-elements/default";
+}
+
+// # ------------ LAYER COMPONENTS ------------ # //
+@layer components-shared {
+	//@import "../shared/ui/grid/grid";
+	@import "../shared/ui/ui";
+}
+
+// # ------------ LAYER UTILITIES ------------ # //
+@layer utilities {
+	@import "../shared/styles/layer-utilities/utilities";
+}

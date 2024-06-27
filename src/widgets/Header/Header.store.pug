@@ -1,0 +1,402 @@
+-
+	const Header = {
+		elem: {
+			Logo: {
+				data: {
+					svgName: 'logo',
+				},
+			},
+			brandHeaderLinkDownload: {
+				data: {
+					linkHref: './test-new.html',
+					text: 'О нас',
+					leftIcon: '#phone'
+				},
+				cn: {
+					modifier: 'phone',
+					page: 'phone-landing',
+					modifierBg: 'substrate',
+					blur: 'blur-half',
+					size: 'big'
+				}
+			},
+			HeaderLinkArr: [
+				{
+					navLink: {
+						data: {
+							text: '<span class="header__point">Продукты</span>',
+						},
+						cn: {
+							submenu: 'with-submenu',
+							size: 'fz-18',
+							color: 'white-hover',
+							modifier: 'wide-menu'
+						},
+						opt: {
+							submenu: true,
+						},
+					},
+					submenu: [
+						{
+							titleSubmenu: {
+								data: {
+									text: 'ЗАЩИТА ИМУЩЕСТВА',
+									tag: 'p',
+								},
+								cn: {
+									color: 'dark-gray',
+									margin: 'mb-12',
+									size: 'm',
+									fw: 'bold',
+								},
+								dataArr: {
+									items: [
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Для квартиры'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												margin: 'mb-8',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Для частного дома'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												margin: 'mb-8',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Для ипотеки ВТБ'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												fw: 'fw-400',
+											},
+										},
+									]
+								}
+							},
+						},
+						{
+							titleSubmenu: {
+								data: {
+									text: 'ЗАЩИТА ЗДОРОВЬЯ',
+									tag: 'p',
+								},
+								cn: {
+									color: 'dark-gray',
+									margin: 'mb-12',
+									size: 'm',
+									fw: 'bold',
+								},
+								dataArr: {
+									items: [
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Для спорта'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												margin: 'mb-8',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Для путешествий'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												margin: 'mb-8',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'От укуса клеща'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												fw: 'fw-400',
+											},
+										},
+									]
+								}
+							},
+						},
+						{
+							titleSubmenu: {
+								data: {
+									text: 'ЗАЩИТА ДОМАШНИХ ЖИВОТНЫХ',
+									tag: 'p',
+								},
+								cn: {
+									color: 'dark-gray',
+									margin: 'mb-12',
+									size: 'm',
+									fw: 'bold',
+								},
+								dataArr: {
+									items: [
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Cтраховая подписка'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												margin: 'mb-8',
+												fw: 'fw-400',
+											},
+										},
+									]
+								}
+							},
+						},
+						{
+							titleSubmenu: {
+								data: {
+									text: 'ДРУГИЕ ПОЛИСЫ',
+									tag: 'p',
+								},
+								cn: {
+									color: 'dark-gray',
+									margin: 'mb-12',
+									size: 'm',
+									fw: 'bold',
+								},
+								dataArr: {
+									items: [
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'ОСАГО'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												margin: 'mb-12',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Страхование от укуса <br> клеща для клиентов ВТБ'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												margin: 'mb-12',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Защита поездок на <br> «‎Велобайке»'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												margin: 'mb-12',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Страхование жилья <br> клиентам ВТБ'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												fw: 'fw-400',
+											}
+										},
+									]
+								}
+							},
+						},
+					]
+				},
+				{
+					navLink: {
+						data: {
+							text: '<span>О нас</span>',
+						},
+						cn: {
+							submenu: 'with-submenu',
+							size: 'fz-18',
+							color: 'white-hover',
+						},
+						opt: {
+							submenu: true,
+						},
+					},
+					submenu: [
+						{
+							titleSubmenu: {
+								data: {
+									tag: 'p',
+								},
+								dataArr: {
+									items: [
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'О компании'
+											},
+											cn: {
+												color: 'black',
+												margin: 'mb-12',
+												size: 'fz-16',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Новости'
+											},
+											cn: {
+												color: 'black',
+												margin: 'mb-12',
+												size: 'fz-16',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Карьера'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												fw: 'fw-400',
+											},
+										},
+									]
+								}
+							},
+						},
+					]
+				},
+				{
+					navLink: {
+						data: {
+							linkHref: './list-pages.html',
+							text: 'Акции'
+						},
+						cn: {
+							size: 'fz-18',
+							effect: 'rest',
+						}
+					}
+				},
+				{
+					navLink: {
+						data: {
+							linkHref: './list-pages.html',
+							text: 'FAQ'
+						},
+						cn: {
+							size: 'fz-18',
+							effect: 'rest',
+						}
+					}
+				},
+				{
+					navLink: {
+						data: {
+							linkHref: '#',
+							linkModal: 'modalWindow',
+							text: 'Контакты',
+						},
+						cn: {
+							submenu: 'with-submenu',
+							size: 'fz-18',
+							color: 'white-hover',
+							modifier: 'feedback-submenu'
+						},
+						opt: {
+							submenu: true,
+						},
+					},
+					submenu: [
+						{
+							titleSubmenu: {
+								data: {
+									tag: 'p',
+								},
+								dataArr: {
+									items: [
+										{
+											data: {
+												linkHref: '#',
+												linkModal: 'modalWindow',
+												text: 'Написать'
+											},
+											cn: {
+												color: 'black',
+												margin: 'mb-12',
+												size: 'fz-16',
+												fw: 'fw-400',
+											},
+										},
+										{
+											data: {
+												linkHref: './list-pages.html',
+												text: 'Позвонить <span class="header-lk__wrap-tel"><span class="header-lk__tel">8 800 302 15 54</span></span>'
+											},
+											cn: {
+												color: 'black',
+												size: 'fz-16',
+												fw: 'fw-400',
+											},
+										},
+									]
+								}
+							},
+						},
+					]
+				},
+			],
+			HeaderLinkAttention: {
+				data: {
+					linkHref: './list-pages.html',
+					leftIcon: 'lightning-red',
+					text: 'Страховой случай'
+				},
+				cn: {
+					modifierBg: 'insurance-case',
+				}
+			},
+		},
+		opt: {
+			isBasicMenu: true,
+			isAdditionalLink: true,
+			isBurgerButton: true
+		},
+	};

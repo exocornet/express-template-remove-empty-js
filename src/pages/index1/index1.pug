@@ -1,0 +1,36 @@
+//- # ПОДКЛЮЧЕНИЕ LAYOUT # -//
+extends ../../shared/helpers/pug/layout
+
+//- # ПОДКЛЮЧЕНИЕ STORE СТРАНИЦЫ # -//
+block variables
+	include store/index.store.pug
+
+//- # ПОДКЛЮЧЕНИЕ CSS СТРАНИЦЫ # -//
+append include-css
+	include styles-and-scripts/index.link.pug
+
+//- # ПОДКЛЮЧЕНИЕ SVG SPRITE СТРАНИЦЫ # -//
+block svg-sprite
+	+SVGSprite(['default', 'user'])
+
+//- # ПОДКЛЮЧЕНИЕ HEADER СТРАНИЦЫ # -//
+block header
+	+Header(Header)
+	+Heading({data: {text: '343434e3e3e3e3e'}})
+
+block main
+	div dsfvdkljhn
+	div(class="dd") sdsdsddfds
+	+SVGUse('user')
+	+Container
+		+Row
+			+Col({ cn: { cols: 'col-3@md col-1@xs' } })
+				div TEST CONTAINER222
+
+//- # ПОДКЛЮЧЕНИЕ FOOTER СТРАНИЦЫ # -//
+block footer
+	+Footer(Footer)
+
+//- # ПОДКЛЮЧЕНИЕ JAVASCRIPT СТРАНИЦЫ # -//
+append include-js
+	include styles-and-scripts/index.script.pug

@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	--heading-font-family: var(--font-roboto-flex);
+	--heading-font-size: var(--fs24);
+	--heading-letter-spacing: 0.02em;
+	--heading-line-height: 1.1;
+
+	letter-spacing: var(--heading-letter-spacing);
+
+	font-family: var(--heading-font-family);
+	line-height: var(--heading-line-height);
+}
+
+h1,
+.h1 {
+	font-size: var(--heading-font-size);
+
+	@include media(xs) {
+		--heading-font-size: var(--fs16);
+		line-height: 1.16;
+	}
+}
+
+h2,
+.h2 {
+	letter-spacing: 0.02em;
+
+	font-size: 16px;
+	line-height: 1.16;
+
+	@include media(xs) {
+		font-size: 10px;
+		line-height: 1.2;
+	}
+}
+
+h3,
+.h3 {
+	letter-spacing: 0;
+
+	//font-family: $font-firasans;
+	font-size: 14px;
+
+	@include media(xs) {
+		letter-spacing: 0.02em;
+
+		font-size: 12px;
+		line-height: 1.25;
+	}
+}
+
+h4,
+.h4 {
+	letter-spacing: 0.02em;
+
+	//font-family: $font-firasans;
+	font-size: 12px;
+	line-height: 1.17;
+
+	@include media(xs) {
+		letter-spacing: 0.01em;
+
+		font-size: 9px;
+		line-height: 1.14;
+	}
+}

@@ -1,0 +1,34 @@
+-
+	function classes(cn) {
+		const BLOCK = CN('footer');
+		const BLOCK2 = CN('contacts');
+		const BLOCK3 = CN('ways');
+		const BLOCK4 = CN('icons');
+		const BLOCK5 = CN('block');
+
+		return {
+			block: BLOCK({
+				[`${cn?.bgColor}`]: ['bg-white',].includes(cn?.bgColor),
+			}, ['new-spacing']),
+			elementTop: BLOCK('top'),
+			elementLeft: BLOCK('left'),
+			elementGroupMarketPlace: BLOCK('group-market-place'),
+			elementRight: BLOCK('right'),
+			elementBottomLeft: BLOCK('bottom-left'),
+			elementBottomRight: BLOCK('bottom-right'),
+			elementElement: BLOCK('element'),
+			elementVisuallyImpaired: BLOCK('visually-impaired', {}, ['bvi-open']),
+			elementLoadLink: BLOCK('load-link'),
+			elementContacts: BLOCK('contacts'),
+			elementLinkContact: BLOCK('link-contact'),
+			elementPhoneText: BLOCK('phone-text'),
+			elementWays: BLOCK('ways', {
+				[`${cn?.socialMobile}`]: !!cn?.socialMobile }),
+			elementWaysText: BLOCK('ways-text'),
+			elementIcons: BLOCK('icons'),
+			elementIcon: BLOCK('icon'),
+			elementBlock: BLOCK('block'),
+			elementBlockTitle: BLOCK('block-title'),
+			elementPageLink: BLOCK('block-page-link'),
+		}
+	}

@@ -1,0 +1,22 @@
+mixin IncludeSVG(nameSVG)
+	- const TAG_SVG = 'svg';
+	//- # ВЕРСТКА КОМПОНЕНТА # -//
+	case nameSVG
+		when 'user'
+			include include-svg/user
+		when 'logo'
+			include include-svg/logo
+		when 'app-store'
+			include include-svg/app-store
+		when 'google-play'
+			include include-svg/google-play
+		when 'rumarket'
+			include include-svg/rumarket
+		when 'nashstore'
+			include include-svg/nashstore
+		when 'telegram'
+			include include-svg/telegram
+		when 'vk'
+			include include-svg/vk
+		when 'lightning-red'
+			include include-svg/lightning-red

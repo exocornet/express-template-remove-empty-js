@@ -1,0 +1,26 @@
+-
+	function classes(cn) {
+		const BLOCK = CN('header-link');
+
+		return {
+			block: BLOCK({
+				[`${cn?.modifier}`]: !!cn?.modifier,
+				[`${cn?.size}`]: !!cn?.size,
+				[`${cn?.page}`]: !!cn?.page,
+				[`${cn?.modifierBg}`]: !!cn?.modifierBg,
+				[`${cn?.effect}`]: !!cn?.effect,
+				[`${cn?.blur}`]: !!cn?.blur,
+				[`${cn?.color}`]: !!cn?.color,
+				[`${cn?.submenu}`]: !!cn?.submenu,
+				[`${cn?.partner}`]: !!cn?.partner,
+				[`${cn?.background}`]: !!cn?.background,
+				[`${cn?.iconStyle}`]: !!cn?.iconStyle,
+				[`${cn?.tag}`]: !!cn?.tag,
+				[`${cn?.fw}`]: !!cn?.fw,
+			}, [
+				cn?.margin,
+			]),
+			elementLeftIcon: BLOCK('left-icon'),
+			elementRightIcon: BLOCK('right-icon'),
+		}
+	}

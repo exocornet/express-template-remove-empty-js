@@ -1,0 +1,151 @@
+{
+	"puls-leto": {
+		"TITLE": "Собаки",
+		"HASHTAG": null,
+		"IMG_PATH": "public/js-images/pet-articles-dog.webp",
+		"IMG_PATH_XS": "public/js-images/pet-articles-dog.webp",
+		"IMG_PATH_SM": "public/js-images/pet-articles-dog.webp",
+		"IMG_PATH_MD": "public/js-images/pet-articles-dog.webp",
+		"IMG_PATH_LG": "public/js-images/pet-articles-dog.webp",
+		"IMG_PATH_L": "public/js-images/pet-articles-dog.webp",
+		"CARDS": [
+			{
+				"ID": "1236",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article-1.webp",
+				"IBLOCK_SECTION_ID": "171",
+				"TITLE": "ТЕСТ!",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-nazvala-top-5-regionov-rf-ustanovivshikh-antirekord-po-ukusam-kleshchey\/"
+			},
+			{
+				"ID": "1238",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article-3.webp",
+				"IBLOCK_SECTION_ID": "171",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-vyshla-v-final-premii-cx-world-awards-srazu-v-3-nominatsiyakh\/"
+			}
+		]
+	},
+	"puls-vesna": {
+		"TITLE": "Кошки",
+		"HASHTAG": null,
+		"IMG_PATH": "public/js-images/pet-articles-cat.webp",
+		"IMG_PATH_XS": "public/js-images/pet-articles-cat.webp",
+		"IMG_PATH_SM": "public/js-images/pet-articles-cat.webp",
+		"IMG_PATH_MD": "public/js-images/pet-articles-cat.webp",
+		"IMG_PATH_LG": "public/js-images/pet-articles-cat.webp",
+		"IMG_PATH_L": "public/js-images/pet-articles-cat.webp",
+		"CARDS": [
+			{
+				"ID": "1237",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article-2.webp",
+				"IBLOCK_SECTION_ID": "171",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-predstavila-novyy-produkt-dlya-ipotechnykh-zaemshchikov-banka-vtb\/"
+			},
+			{
+				"ID": "1238",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article-4.webp",
+				"IBLOCK_SECTION_ID": "171",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-vyshla-v-final-premii-cx-world-awards-srazu-v-3-nominatsiyakh\/"
+			}
+		]
+	},
+	"ferrets": {
+		"TITLE": "Хорьки",
+		"HASHTAG": null,
+		"IMG_PATH": "public/js-images/pet-articles-ferrets.webp",
+		"IMG_PATH_XS": "public/js-images/pet-articles-ferrets.webp",
+		"IMG_PATH_SM": "public/js-images/pet-articles-ferrets.webp",
+		"IMG_PATH_MD": "public/js-images/pet-articles-ferrets.webp",
+		"IMG_PATH_LG": "public/js-images/pet-articles-ferrets.webp",
+		"IMG_PATH_L": "public/js-images/pet-articles-ferrets.webp",
+		"CARDS": [
+			{
+				"ID": "1241",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article.png",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-zapustila-pervuyu-v-rossii-strakhovuyu-podpisku-dlya-koshek-sobak-khorkov-i-shinshill\/"
+			},
+			{
+				"ID": "1240",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article.png",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/agentstvo-nkr-podtverdilo-reyting-sk-puls-na-urovne-bbb-ru\/"
+			},
+			{
+				"ID": "1239",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article.png",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/oformlyayte-zashchitu-i-tvorite-dobro-sk-puls-zapuskaet-blagotvoritelnuyu-aktsiyu-v-polzu-fonda-khab\/"
+			}
+		]
+	},
+	"nedelya-4": {
+		"TITLE": "Шиншиллы",
+		"HASHTAG": null,
+		"IMG_PATH": "public/js-images/pet-articles-chinchillas.webp",
+		"IMG_PATH_XS": "public/js-images/pet-articles-chinchillas.webp",
+		"IMG_PATH_SM": "public/js-images/pet-articles-chinchillas.webp",
+		"IMG_PATH_MD": "public/js-images/pet-articles-chinchillas.webp",
+		"IMG_PATH_LG": "public/js-images/pet-articles-chinchillas.webp",
+		"IMG_PATH_L": "public/js-images/pet-articles-chinchillas.webp",
+		"CARDS": [
+			{
+				"ID": "1241",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article.png",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/sk-puls-zapustila-pervuyu-v-rossii-strakhovuyu-podpisku-dlya-koshek-sobak-khorkov-i-shinshill\/"
+			},
+			{
+				"ID": "1240",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article.png",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/agentstvo-nkr-podtverdilo-reyting-sk-puls-na-urovne-bbb-ru\/"
+			},
+			{
+				"ID": "1239",
+				"CODE": "#",
+				"NAME": "Более 90% страховых случаев в городских квартирах происходят из-за заливов",
+				"ACTIVE_FROM": {},
+				"PREVIEW_PICTURE": "public/js-images/article.png",
+				"IBLOCK_SECTION_ID": "172",
+				"DATE": null,
+				"DETAIL_PAGE_URL": "\/ne-propusti-leto\/oformlyayte-zashchitu-i-tvorite-dobro-sk-puls-zapuskaet-blagotvoritelnuyu-aktsiyu-v-polzu-fonda-khab\/"
+			}
+		]
+	}
+}

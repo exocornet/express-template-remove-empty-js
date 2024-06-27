@@ -1,0 +1,26 @@
+//- # ПОДКЛЮЧЕНИЕ LAYOUT # -//
+extends ../../shared/helpers/pug/layout
+
+//- # ПОДКЛЮЧЕНИЕ STORE СТРАНИЦЫ # -//
+block variables
+	include store/main.store.pug
+
+//- # ПОДКЛЮЧЕНИЕ CSS СТРАНИЦЫ # -//
+append include-css
+	include styles-and-scripts/main.link.pug
+
+block svg-sprite
+	+SVGSprite(['default', 'user'])
+
+//- # ПОДКЛЮЧЕНИЕ HEADER СТРАНИЦЫ # -//
+block header
+	+Header(Header)
+	div 23232324
+
+//- # ПОДКЛЮЧЕНИЕ FOOTER СТРАНИЦЫ # -//
+block footer
+	+Footer(Footer)
+
+//- # ПОДКЛЮЧЕНИЕ JAVASCRIPT СТРАНИЦЫ # -//
+append include-js
+	include styles-and-scripts/main.script.pug
